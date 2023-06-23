@@ -21,6 +21,7 @@ const KpiPage = () => {
   const countBarWidth = (item) => {
     return item.percent * 970 / 100;
   }
+
   // setting opacity to the bars
   for(let i = 0; i < items.length; i++) {
     if(i === 0) {
@@ -30,7 +31,16 @@ const KpiPage = () => {
     items[i].opacity = items[i - 1].opacity <= 0.6 ? 0.5 : items[i - 1].opacity - 0.05;
   }
   return (
-    <>
+    <div className="kpi-container">
+      <header className="kpi-header">
+        <div className="kpi-header-inputs-container">
+          <input className="kpi-header__input" type="radio" id="kpi-view-1" name="kpi-view"/>
+          <label className="kpi-header__label" htmlFor="kpi-view-1"></label>
+          <input className="kpi-header__input" type="radio" id="kpi-view-2" name="kpi-view"/>
+          <label className="kpi-header__label" htmlFor="kpi-view-2"></label>
+        </div>
+        <h2 className="kpi-header_head">KPI помодельный</h2>
+      </header>
       <div className="kpi-content">
         <div className="kpi-content-names">
           {items.map((item) => {
@@ -48,7 +58,7 @@ const KpiPage = () => {
           })}
         </div>
       </div>
-    </>
+    </div>
   )
 };
 

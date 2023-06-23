@@ -1,6 +1,59 @@
-.kpi-content { 
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
+
+.kpi-container {
     max-width: 1300px;
     margin: 0 auto;
+    font-family: 'Exo 2', sans-serif;
+}
+.kpi-header {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #E3E6F3;
+}
+.kpi-header-inputs-container {
+    display: flex;
+    gap: 10px;
+    margin-right: 15px;
+}
+.kpi-header__input{
+    display:none;
+}
+
+.kpi-header__input + .kpi-header__label
+{
+    height: 42px;
+    width: 42px;
+    display:inline-block;
+    padding: 0 0 0 0;
+    cursor: pointer;
+}
+.kpi-header__label {
+    border: 1px solid #E3E6F3;
+    border-radius: 6px;
+}
+.kpi-header__input:nth-child(1) + .kpi-header__label:nth-child(2) {
+    background: url("../../assets/images/svg/cil_view-one_1.svg") no-repeat center center;
+}
+.kpi-header__input:nth-child(1):checked + .kpi-header__label:nth-child(2) {
+    background: url("../../assets/images/svg/cil_view-one_2.svg") no-repeat center center;
+}
+.kpi-header__input:nth-child(3) + .kpi-header__label {
+    background: url("../../assets/images/svg/cil_view-two_1.svg") no-repeat center center;
+}
+.kpi-header__input:nth-child(3):checked + .kpi-header__label {
+    background: url("../../assets/images/svg/cil_view-two_2.svg") no-repeat center center;
+}
+.kpi-header__input:checked + .kpi-header__label
+{
+    //background: #0080FF;
+    height: 42px;
+    width: 42px;
+    display:inline-block;
+    padding: 0 0 0 0;
+}
+.kpi-content {
     display: flex;
     gap: 10px;
     font-size: 16px;
@@ -11,7 +64,6 @@
         align-items: flex-end;
         gap: 10px;
         width: 250px;
-        vertical-align: middle;
     }
     &-lines {
         display: flex;
@@ -27,5 +79,5 @@
                 margin-right: 10px;
             }
         }
-    }  
+    }
 }
