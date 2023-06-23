@@ -1,0 +1,31 @@
+@import "../../utils/scss/vars";
+
+.input {
+  width: 100%;
+  outline: none;
+  padding: 11px;
+  font-size: $fz-base;
+  border: $br-base;
+  border-top-left-radius: $br-radius-base;
+  border-bottom-left-radius: $br-radius-base;
+  box-sizing: border-box;
+
+  &__wrapper {
+    display: flex;
+    max-height: 40px;
+    width: 100%;
+  }
+
+  &__search-button {
+    border: $br-base;
+    width: 40px;
+    height: 40px;
+    background-image: url("../../assets/images/svg/search.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-top-right-radius: $br-radius-base;
+    border-bottom-right-radius: $br-radius-base;
+    cursor: pointer;
+  }
+}
