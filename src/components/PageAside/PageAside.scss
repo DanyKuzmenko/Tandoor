@@ -1,0 +1,45 @@
+@import "../../utils/scss/vars";
+
+.aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+
+  &__top-block {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    align-items: center;
+    margin-top: 36px;
+  }
+
+  &__menu {
+    width: 18px;
+    height: 18px;
+    outline: none;
+    background-color: #fff;
+    border: unset;
+    background-image: url("../../assets/images/svg/menu.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__navigation-element {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,37 @@
+@import "../../utils/scss/vars";
+
+.city {
+  font-size: $fz-base;
+  color: $gray;
+  white-space: nowrap;
+
+  &__wrapper {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background-color: unset;
+    border: unset;
+    outline: unset;
+    cursor: pointer;
+  }
+
+  &__location {
+    background-image: url("../../assets/images/svg/location.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__arrow-down {
+    width: 18px;
+    height: 18px;
+    background-image: url("../../assets/images/svg/arrow-down.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
