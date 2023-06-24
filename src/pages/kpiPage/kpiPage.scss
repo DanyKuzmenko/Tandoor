@@ -70,22 +70,49 @@
 {
     background: url("../../assets/images/svg/doors-label-checked.svg") no-repeat left center;
 }
+.kpi-header-select-container {
+    position: relative;
+}
 .kpi-header-filter-group-select {
-    font: inherit;
-    letter-spacing: inherit;
-    word-spacing: inherit;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
     width: 235px;
     height: 42px;
-    padding-left: 21px;
+    border-radius: 2px;
+    border: 1px solid #E3E6F3;
+    background: #FFF;
 }
-.kpi-header-filter-group-select:focus {
-    outline: none;
+.kpi-header-filter-group-select__control {
+    width: 100%;
+    padding-left: 21px;
+    padding-right: 15px;
+    background: url("../../assets/images/svg/ic_baseline-arrow-right.svg") no-repeat 200px center;
 }
 .kpi-header-filter-group-select__option {
-    height: 42px;
+    padding: 12px 15px 12px 21px;
+    background: #fff;
+    border-bottom: 1px solid #EEEFF6;
+    &:hover {
+        background: #F9FAFF;
+    }
+}
+.kpi-header-filter-group-select-options {
+    position: absolute;
+    display: none;
+    width: 100%;
+
+}
+.kpi-header-filter-group-select-options__item {
+    background: #FFF;
+    position: relative;
+    z-index: 1;
+    padding: 12px 15px 11px 21px;
+    border-bottom: 1px solid #EEEFF6;
+    &:hover {
+        background: #F9FAFF;
+    }
+}
+.kpi-header-filter-group-select__indicators svg {
+    display: none;
+
 }
 .kpi-content {
     display: flex;

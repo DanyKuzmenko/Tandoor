@@ -37,6 +37,5 @@ const KpiContent = (props) => {
 }
 KpiContent.propTypes = {
     items: PropTypes.array.isRequired,
-    onFilter: PropTypes.func
 };
 export default KpiContent;
