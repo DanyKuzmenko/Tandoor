@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 const MainPage = () => {
   return (
     <div>
-      <p>hui</p>
-      <Link to={"/kpi"}>auf</Link>
+      <Link to={"/kpi"}>KpiPage</Link>
     </div>
   );
 };
