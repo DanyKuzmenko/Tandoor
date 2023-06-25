@@ -25,7 +25,7 @@ const KpiPage = () => {
       return item.percent = Math.ceil(item.fact / item.plan * 100)
     });
     items.sort((a, b) => b.percent - a.percent);
-  },[items])
+  }, [items])
   const selectOptions = [
     { value: "", label: "Все KPI" },
     { value: "KPI1", label: "KPI № 1" },
@@ -34,7 +34,7 @@ const KpiPage = () => {
   ]
   const [doors, setDoors] = useState(items);
   const [selectedOption, setSelectedOption] = useState();
-  const [kpiView, setKpiView] = useState();
+  const [kpiView, setKpiView] = useState("kpi-view-1");
   const getKpiFilteredDoors = () => {
     return selectedOption ? [...doors].filter((door) => door.kpi === selectedOption) : doors;
   }
@@ -66,6 +66,7 @@ const KpiPage = () => {
       />
 
       <KpiContent
+        kpiView = {kpiView}
         items={kpiFilteredDoors}
       />
     </div>
