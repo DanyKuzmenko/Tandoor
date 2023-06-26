@@ -1,4 +1,5 @@
 // Colors
+$black: #222631;
 $gray: #343F5B;
 $light-gray: #8F96B0;
 $page-background-color: #EEEFF6;
@@ -16,10 +17,12 @@ $b: 600;
 $br-base: 1px solid #EEEFF6;
 $br-avatar: 1px solid #8F96B0;
 $br-partner: 1px solid #E3E6F3;
+$br-button: 1px solid #BDC0CF;
 
 
 // Border-radius
-$br-radius-base: 2px;
+$br-radius-sm: 2px;
+$br-radius-base: 6px;
 $br-radius-lg: 14px;
 
 
