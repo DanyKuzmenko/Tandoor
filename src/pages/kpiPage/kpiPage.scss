@@ -96,7 +96,7 @@
     width: 100%;
     padding-left: 21px;
     padding-right: 15px;
-    background: url("../../assets/images/svg/ic_baseline-arrow-right.svg") no-repeat 200px center;
+    background: url("../../assets/images/svg/arrow-right.svg") no-repeat 200px center;
 }
 
 .kpi-header-filter-group-select__option {
@@ -164,4 +164,16 @@
             }
         }
     }
+}
+.v2_kpi-content-item__plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.v2_kpi-content-item__plan:after {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    content: "";
+    background: url("../../assets/images/svg/arrow-right.svg") no-repeat center center;
 }

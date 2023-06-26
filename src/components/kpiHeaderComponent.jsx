@@ -8,9 +8,9 @@ const KpiHeader = (props) => {
         <header className="kpi-header">
             <div className="kpi-header-container">
                 <div className="kpi-header-inputs-container">
-                    <input defaultChecked className="kpi-header-view__input" type="radio" id="kpi-view-1" name="kpi-view" />
+                    <input onChange={(ev) => {props.setKpiView(ev.target.value)}} defaultChecked value="kpi-view-1" className="kpi-header-view__input" type="radio" id="kpi-view-1" name="kpi-view" />
                     <label className="kpi-header-view__label" htmlFor="kpi-view-1"></label>
-                    <input className="kpi-header-view__input" type="radio" id="kpi-view-2" name="kpi-view" />
+                    <input onChange={(ev) => {props.setKpiView(ev.target.value)}} value="kpi-view-2" className="kpi-header-view__input" type="radio" id="kpi-view-2" name="kpi-view" />
                     <label className="kpi-header-view__label" htmlFor="kpi-view-2"></label>
                 </div>
                 <h2 className="kpi-header_head">KPI помодельный</h2>
@@ -42,6 +42,8 @@ KpiHeader.propTypes = {
     selectOptions: PropTypes.array.isRequired,
     filterByType: PropTypes.func,
     selectChange: PropTypes.func,
-    selectedOption: PropTypes.string
+    selectedOption: PropTypes.string,
+    setKpiView: PropTypes.func,
+    kpiView: PropTypes.string
 };
 export default KpiHeader;
