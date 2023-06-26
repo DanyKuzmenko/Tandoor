@@ -1,0 +1,23 @@
+@import "../../utils/scss/vars";
+
+.header {
+  box-sizing: border-box;
+  padding: 20px 40px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    gap: 20px;
+    max-height: 50px;
+    height: 100%;
+  }
+
+  &__line {
+    height: 50px;
+    min-width: 1px;
+    opacity: $opacity-sm;
+    background-color: $light-gray;
+  }
+}

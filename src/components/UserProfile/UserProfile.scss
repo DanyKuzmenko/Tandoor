@@ -1,0 +1,59 @@
+@import "../../utils/scss/vars";
+
+.user-profile {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+
+  &__avatar {
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: $br-avatar;
+    background-image: url("../../assets/images/avatar.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+  }
+
+  &__name {
+    font-size: $fz-lg;
+    color: $gray;
+    white-space: nowrap;
+  }
+
+  &__role {
+    padding: 2px 8px;
+    font-size: $fz-sm;
+    font-weight: $b;
+    background: linear-gradient(142deg, #BADC77 0%, #E7FFB7 48.75%, #BADC77 100%);
+    box-shadow: 0 1px 2px 0 rgba(89, 115, 38, 0.50);
+    border-radius: $br-radius-lg;
+    color: #5D7C1E;
+  }
+
+  &__button {
+    width: 24px;
+    height: 24px;
+    outline: none;
+    border: none;
+    background-color: unset;
+    background-image: url("../../assets/images/svg/arrow-down.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

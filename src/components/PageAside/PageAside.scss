@@ -1,0 +1,108 @@
+@import "../../utils/scss/vars";
+
+.aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+
+  &__top-block {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    align-items: center;
+    margin-top: 36px;
+  }
+
+  &__menu {
+    width: 18px;
+    height: 18px;
+    outline: none;
+    background-color: #fff;
+    border: unset;
+    background-image: url("../../assets/images/svg/menu.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__navigation-element {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+
+  &__navigation-button {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: unset;
+    background-color: unset;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__navigation-button_active {
+    border-right: 4px solid $green;
+    border-left: 4px solid #fff;
+  }
+
+  &__navigation-icon_active {
+    path {
+      fill: $green;
+    }
+  }
+
+  &__navigation-active-point {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $green;
+    position: absolute;
+    top: 27px;
+    right: 6px;
+  }
+
+  &__partners {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__partner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: $br-partner;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__partner:nth-of-type(1) {
+    background-image: url("../../assets/images/partners/tandoor.png");
+  }
+
+  &__partner:nth-of-type(2) {
+    background-image: url("../../assets/images/partners/bitrix.png");
+  }
+
+  &__partner:nth-of-type(3) {
+    background-image: url("../../assets/images/partners/1c.png");
+  }
+}
