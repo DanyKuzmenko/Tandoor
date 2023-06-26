@@ -6,8 +6,8 @@
   padding: 11px;
   font-size: $fz-base;
   border: $br-base;
-  border-top-left-radius: $br-radius-base;
-  border-bottom-left-radius: $br-radius-base;
+  border-top-left-radius: $br-radius-xs;
+  border-bottom-left-radius: $br-radius-xs;
   box-sizing: border-box;
 
   &__wrapper {
@@ -24,8 +24,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: #fff;
-    border-top-right-radius: $br-radius-base;
-    border-bottom-right-radius: $br-radius-base;
+    border-top-right-radius: $br-radius-xs;
+    border-bottom-right-radius: $br-radius-xs;
     cursor: pointer;
   }
 }

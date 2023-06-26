@@ -1,0 +1,37 @@
+@import "../../../utils/scss/vars";
+
+.result-block {
+  padding: 0 20px 20px 20px;
+  background-color: #fff;
+
+  &__table {
+    width: 100%;
+    border: $br-partner;
+    border-radius: $br-radius-sm;
+    // Чтобы работало закругление
+    //border-collapse: unset;
+  }
+
+  &__thead-th {
+    padding: 8px 3px 8px 20px;
+    font-size: $fz-base;
+    color: $light-gray;
+    text-align: start;
+
+    &:first-of-type {
+      padding: 8px 3px 8px 10px;
+    }
+  }
+
+  &__tbody-td {
+    padding: 10.5px 0 10.5px 20px;
+    font-size: $fz-base;
+    color: $black;
+    border-top: $br-partner;
+
+
+    &:first-of-type {
+      padding: 10.5px 0 10.5px 10px;
+    }
+  }
+}
