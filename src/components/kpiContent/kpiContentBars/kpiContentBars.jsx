@@ -21,27 +21,27 @@ const KpiContentBars = ({ items }) => {
 
   return (
     <div className="kpi-content">
-      <div className="kpi-content-names">
+      <div className="kpi-content__names">
         {items.map((item) => (
-          <div key={item.id} className="kpi-content-names__item">
+          <div key={item.id} className="kpi-content__names__item">
             {item.name}
           </div>
         ))}
       </div>
-      <div className="kpi-content-lines">
+      <div className="kpi-content__lines">
         {items.map((item) => (
           <div
             key={item.name + item.percent}
-            className="kpi-content-lines-line"
+            className="kpi-content__lines__line"
           >
             <span
               style={{
                 width: countBarWidth(item) + "px",
                 opacity: item.opacity,
               }}
-              className="kpi-content-lines-line__bar"
+              className="kpi-content__lines__line__bar"
             />
-            <span className="kpi-content-lines-line__percentage">
+            <span className="kpi-content__lines__line__percentage">
               {item.percent}%
             </span>
           </div>

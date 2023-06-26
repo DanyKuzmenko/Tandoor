@@ -53,7 +53,6 @@ const KpiPage = () => {
       <KpiHeader
         kpiView={kpiView}
         setKpiView={setKpiView}
-        selectValue={selectedOption}
         selectOptions={kpiSelectOptions}
         filterByType={handleDoorsTypeRadio}
         selectChange={handleSelectChange}

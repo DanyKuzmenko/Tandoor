@@ -6,7 +6,7 @@ import "./kpiHeader.scss";
 const KpiHeader = ({
   selectChange,
   setKpiView,
-  selectValue,
+  selectedOption,
   filterByType,
   selectOptions,
 }) => {
@@ -92,7 +92,7 @@ const KpiHeader = ({
             name="kpi"
             options={selectOptions}
             unstyled={true}
-            value={selectValue}
+            value={selectedOption}
             onChange={(event) => {
               selectChange(event.value);
             }}
@@ -106,7 +106,7 @@ KpiHeader.propTypes = {
   selectOptions: PropTypes.array.isRequired,
   filterByType: PropTypes.func,
   selectChange: PropTypes.func,
-  selectValue: PropTypes.string,
+  selectedOption: PropTypes.string,
   setKpiView: PropTypes.func,
   kpiView: PropTypes.string,
 };

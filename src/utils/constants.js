@@ -7,6 +7,8 @@ export const kpiItems = [
     percent: 99,
     type: "entrance",
     kpi: "KPI1",
+    material: "Итальянский орех",
+    img: "door1.png",
   },
   {
     id: 2,
@@ -16,6 +18,8 @@ export const kpiItems = [
     percent: 95,
     type: "interior",
     kpi: "KPI2",
+    material: "Итальянский орех",
+    img: "door2.png",
   },
   {
     id: 3,
@@ -25,6 +29,8 @@ export const kpiItems = [
     percent: 86,
     type: "interior",
     kpi: "KPI3",
+    material: "Итальянский орех",
+    img: "door3.png",
   },
   {
     id: 4,
@@ -34,6 +40,8 @@ export const kpiItems = [
     percent: 75,
     type: "entrance",
     kpi: "KPI2",
+    material: "Итальянский орех",
+    img: "door4.png",
   },
   {
     id: 5,
@@ -43,6 +51,8 @@ export const kpiItems = [
     percent: 69,
     type: "interior",
     kpi: "KPI1",
+    material: "Итальянский орех",
+    img: "door5.png",
   },
   {
     id: 6,
@@ -52,6 +62,8 @@ export const kpiItems = [
     percent: 58,
     type: "interior",
     kpi: "KPI3",
+    material: "Итальянский орех",
+    img: "door6.png",
   },
   {
     id: 7,
@@ -61,6 +73,8 @@ export const kpiItems = [
     percent: 45,
     type: "interior",
     kpi: "KPI2",
+    material: "Итальянский орех",
+    img: "door7.png",
   },
   {
     id: 8,
@@ -70,6 +84,8 @@ export const kpiItems = [
     percent: 37,
     type: "interior",
     kpi: "KPI3",
+    material: "Итальянский орех",
+    img: "door1.png",
   },
   {
     id: 9,
@@ -79,6 +95,8 @@ export const kpiItems = [
     percent: 26,
     type: "entrance",
     kpi: "KPI1",
+    material: "Итальянский орех",
+    img: "door2.png",
   },
   {
     id: 10,
@@ -88,6 +106,8 @@ export const kpiItems = [
     percent: 20,
     type: "interior",
     kpi: "KPI3",
+    material: "Итальянский орех",
+    img: "door3.png",
   },
   {
     id: 11,
@@ -97,6 +117,8 @@ export const kpiItems = [
     percent: 18,
     type: "interior",
     kpi: "KPI2",
+    material: "Итальянский орех",
+    img: "door4.png",
   },
   {
     id: 12,
@@ -106,6 +128,8 @@ export const kpiItems = [
     percent: 15,
     type: "interior",
     kpi: "KPI3",
+    material: "Итальянский орех",
+    img: "door5.png",
   },
   {
     id: 13,
@@ -115,6 +139,8 @@ export const kpiItems = [
     percent: 12,
     type: "entrance",
     kpi: "KPI1",
+    material: "Итальянский орех",
+    img: "door6.png",
   },
   {
     id: 14,
@@ -124,6 +150,8 @@ export const kpiItems = [
     percent: 5,
     type: "entrance",
     kpi: "KPI2",
+    material: "Итальянский орех",
+    img: "door7.png",
   },
 ];
 
