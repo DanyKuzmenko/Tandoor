@@ -9,9 +9,7 @@ const MainPage = () => {
     <PageWrapper>
       <PageAside />
       <Header />
-      <main>
-
-      </main>
+      <main></main>
     </PageWrapper>
   );
 };

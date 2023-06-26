@@ -1,16 +1,16 @@
-import React from 'react';
-import './PageWrapper.scss';
+import React from "react";
+import "./PageWrapper.scss";
+import PropTypes from "prop-types";
 
-const PageWrapper = ({children}) => {
-    return (
-        <div className='page-wrapper'>
-            {children}
-        </div>
-    );
-};
+const PageWrapper = ({ children }) => (
+  <div className="page-wrapper">{children}</div>
+);
 
 PageWrapper.propTypes = {
-    children: React.Children
-}
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+};
 
 export default PageWrapper;
