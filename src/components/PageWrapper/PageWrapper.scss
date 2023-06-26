@@ -1,0 +1,12 @@
+@import "../../utils/scss/vars";
+
+.page-wrapper {
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1500px) {
+  .page-wrapper {
+    margin: 0 0 0 60px;
+  }
+}
