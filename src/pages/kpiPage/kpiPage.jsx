@@ -1,9 +1,9 @@
 import React, { useEffect, useMemo, useState } from "react";
 import "./kpiPage.scss";
-import KpiHeader from "../../components/kpiContent/kpiHeader/kpiHeader";
+import KpiHeader from "../../components/KpiContent/KpiHeader/kpiHeader";
 import { kpiItems, kpiSelectOptions } from "../../utils/constants";
-import KpiContentBars from "../../components/kpiContent/kpiContentBars/kpiContentBars";
-import KpiContentCards from "../../components/kpiContent/kpiContentCards/kpiContentCards";
+import KpiContentBars from "../../components/KpiContent/KpiContentBars/kpiContentBars";
+import KpiContentCards from "../../components/KpiContent/KpiContentCards/kpiContentCards";
 
 const KpiPage = () => {
   const [items, setItems] = useState([]);
