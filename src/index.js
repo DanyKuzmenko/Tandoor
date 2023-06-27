@@ -5,6 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainPage from "./pages/mainPage/mainPage";
 import KpiComponent from "./components/kpComponent/KpiComponent";
+import TasksComponent from "./components/Tasks/TasksComponent";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/kpi",
     element: <KpiComponent />,
+  },
+  {
+    path: "/Tasks",
+    element: <TasksComponent />,
   },
 ]);
 

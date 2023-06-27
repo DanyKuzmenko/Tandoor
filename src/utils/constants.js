@@ -161,3 +161,17 @@ export const kpiSelectOptions = [
   { value: "KPI № 2", label: "KPI № 2" },
   { value: "KPI № 3", label: "KPI № 3" },
 ];
+export const constTasks = [
+  {
+    id: "001",
+    name: "Позвонить в отдел маркетинга по поводу визиток",
+    dateCreate: "12.09.2021 12:34",
+    dateEnd: "12.09.2021 12:34",
+  },
+  {
+    id: "002",
+    name: "Сформирован (1)",
+    dateCreate: "12.09.2021 12:34",
+    dateEnd: "12.09.2021 12:34",
+  },
+];
