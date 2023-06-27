@@ -9,11 +9,12 @@ const KpiHeader = ({
   selectedOption,
   filterByType,
   selectOptions,
+  lastFilter,
 }) => {
   return (
     <header className="kpi-header">
-      <div className="kpi-header-container">
-        <div className="kpi-header-inputs-container">
+      <div className="kpi-header__container">
+        <div className="kpi-header__inputs">
           <input
             onChange={(ev) => {
               setKpiView(ev.target.value);
@@ -38,8 +39,15 @@ const KpiHeader = ({
           />
           <label className="kpi-header-view__label" htmlFor="kpi-view-2" />
         </div>
-        <h2 className="kpi-header_head">KPI помодельный</h2>
+        <div className="kpi-header__name__container">
+          <h2 className="kpi-header__head">KPI помодельный</h2>
+          <div className="kpi-header__filter">
+            <span>{lastFilter.kpiType}</span>
+            <span>{lastFilter.doorType}</span>
+          </div>
+        </div>
       </div>
+
       <div className="kpi-header-filter-group">
         <input
           onChange={(event) => filterByType(event)}
@@ -58,7 +66,7 @@ const KpiHeader = ({
         </label>
         <input
           onChange={(event) => filterByType(event)}
-          value="entrance"
+          value="Входные двери"
           type="radio"
           id="doors-type-1"
           name="doors-type"
@@ -72,7 +80,7 @@ const KpiHeader = ({
         </label>
         <input
           onChange={(event) => filterByType(event)}
-          value="interior"
+          value="Межкомнатные двери"
           type="radio"
           id="doors-type-2"
           name="doors-type"
@@ -109,5 +117,6 @@ KpiHeader.propTypes = {
   selectedOption: PropTypes.string,
   setKpiView: PropTypes.func,
   kpiView: PropTypes.string,
+  lastFilter: PropTypes.object,
 };
 export default KpiHeader;

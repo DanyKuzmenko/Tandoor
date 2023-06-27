@@ -10,20 +10,54 @@ const KpiContentCards = ({ items }) => {
           <div className="kpi-cards__item__plan">План {item.plan}</div>
           <img
             className="kpi-cards__item__image"
-            src={require("../../../assets/images/doors/" + item.img)}
+            src={require("/src/assets/images/doors/" + item.img)}
           ></img>
           <div>
             <div className="kpi-cards__item__name">{item.name}</div>
             <div className="kpi-cards__item__material">{item.material}</div>
           </div>
           <div className="kpi-cards__item__percent">
-            <div className="kpi-cards__item__percent__bar">
+            <div
+              className="kpi-cards__item__percent__bar"
+              style={
+                item.percent < 30
+                  ? {
+                      background: "#FBECEC",
+                    }
+                  : {
+                      background: "#E5FFCB",
+                    }
+              }
+            >
               <div
-                style={{ width: (item.percent * 180) / 100 + "px" }}
+                style={
+                  item.percent < 30
+                    ? {
+                        background: "#D84040",
+                        width: (item.percent * 180) / 100 + "px",
+                      }
+                    : {
+                        background: "#9ACA3C",
+                        width: (item.percent * 180) / 100 + "px",
+                      }
+                }
                 className="kpi-cards__item__percent__bar_green"
               ></div>
             </div>
-            <div className="kpi-cards__item__percent__fact">{item.fact}</div>
+            <div
+              className="kpi-cards__item__percent__fact"
+              style={
+                item.percent < 30
+                  ? {
+                      color: "#D84040",
+                    }
+                  : {
+                      color: "#9ACA3C",
+                    }
+              }
+            >
+              {item.fact}
+            </div>
           </div>
         </div>
       ))}

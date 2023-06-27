@@ -1,14 +1,20 @@
 import React, { useEffect, useMemo, useState } from "react";
-import "./kpiPage.scss";
-import KpiHeader from "../../components/kpiContent/kpiHeader/kpiHeader";
+import "./kpiComponent.scss";
+import KpiHeader from "../kpiHeader/kpiHeader";
 import { kpiItems, kpiSelectOptions } from "../../utils/constants";
-import KpiContentBars from "../../components/kpiContent/kpiContentBars/kpiContentBars";
-import KpiContentCards from "../../components/kpiContent/kpiContentCards/kpiContentCards";
+import KpiContentBars from "../kpiContent/kpiContentBars/kpiContentBars";
+import KpiContentCards from "../kpiContent/kpiContentCards/kpiContentCards";
 
-const KpiPage = () => {
+const KpiComponent = () => {
   const [items, setItems] = useState([]);
   const [doors, setDoors] = useState(kpiItems);
   const [selectedOption, setSelectedOption] = useState("");
+
+  // eslint-disable-next-line no-unused-vars
+  const [lastFilter, setLastFilter] = useState({
+    doorType: "",
+    kpiType: "Все KPI",
+  });
   const [kpiView, setKpiView] = useState("kpi-view-1");
 
   useEffect(() => {
@@ -35,14 +41,22 @@ const KpiPage = () => {
 
   const handleSelectChange = (value) => {
     setSelectedOption(value);
+    ``;
+    if (value) {
+      setLastFilter({ ...lastFilter, kpiType: value });
+    } else {
+      setLastFilter({ ...lastFilter, kpiType: "Все KPI" });
+    }
   };
 
   const handleDoorsTypeRadio = (e) => {
     setDoors(
       kpiItems.filter((door) => {
         if (e.target.value === "all") {
+          setLastFilter({ ...lastFilter, doorType: "" });
           return true;
         }
+        setLastFilter({ ...lastFilter, doorType: e.target.value });
         return door.type === e.target.value;
       })
     );
@@ -56,6 +70,8 @@ const KpiPage = () => {
         selectOptions={kpiSelectOptions}
         filterByType={handleDoorsTypeRadio}
         selectChange={handleSelectChange}
+        lastFilter={lastFilter}
+        setLastFilter={setLastFilter}
       />
 
       {kpiView === "kpi-view-1" ? (
@@ -67,4 +83,4 @@ const KpiPage = () => {
   );
 };
 
-export default KpiPage;
+export default KpiComponent;
