@@ -32,7 +32,7 @@ const SearchBlock = () => {
   };
 
   return (
-    <div className="search-block__wrapper">
+    <section className="search-block__wrapper">
       <div className="search-block">
         <Select
           className="search-block__select"
@@ -56,7 +56,7 @@ const SearchBlock = () => {
         </div>
       </div>
       {isSearchResultBlockOpen ? <SearchResultBlock /> : ''}
-    </div>
+    </section>
   );
 };
 
