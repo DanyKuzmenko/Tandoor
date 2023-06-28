@@ -1,0 +1,50 @@
+.tasks-content {
+  margin: 0 20px;
+  &__item {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    border-bottom: 1px solid #E3E6F3;
+    color: #222631;
+    font-size: 16px;
+    max-width: 820px;
+    &:first-child {
+      color: #8F96B0;
+      background: #F9FAFF;
+      & .tasks-content__item {
+        &__id {
+          border-right: 1px solid #E3E6F3;
+        }
+        &__name {
+          border-right: 1px solid #E3E6F3;
+        }
+        &__date {
+          border-right: 1px solid #E3E6F3;
+        }
+      }
+    }
+    &__id {
+      flex: 0 1 50px;
+      box-sizing: border-box;
+      padding-left: 10px;
+      max-width: 50px;
+    }
+    &__name {
+      padding-left: 20px;
+      flex: 0 1 430px;
+    }
+    &__date {
+      flex: 0 1 170px;
+      padding-left: 20px;
+    }
+    &_active {
+      background: #FFE3E3;
+    }
+  }
+
+}
+.tasks_not-found {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}

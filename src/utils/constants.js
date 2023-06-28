@@ -165,13 +165,16 @@ export const constTasks = [
   {
     id: "001",
     name: "Позвонить в отдел маркетинга по поводу визиток",
-    dateCreate: "12.09.2021 12:34",
-    dateEnd: "12.09.2021 12:34",
+    // mm.dd.yyyy
+    dateCreate: "09.12.2021 12:34",
+    dateEnd: "09.12.2021 12:34",
+    active: true,
   },
   {
     id: "002",
     name: "Сформирован (1)",
-    dateCreate: "12.09.2021 12:34",
-    dateEnd: "12.09.2021 12:34",
+    dateCreate: "09.12.2021 12:34",
+    dateEnd: "09.12.2021 12:34",
+    active: false,
   },
 ];

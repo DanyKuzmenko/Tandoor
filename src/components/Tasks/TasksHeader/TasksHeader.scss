@@ -1,8 +1,9 @@
 .tasks {
   &__container {
     display: flex;
-    padding: 14px 20px;
     align-items: center;
+    justify-content: center;
+    padding: 14px 0;
   }
   &__header {
     font-size: 22px;
@@ -13,13 +14,12 @@
   &__search {
     border-radius: 2px;
     border: 1px solid #E3E6F3;
-    padding: 0 10px 0 11px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     min-height: 42px;
     font-size: 16px;
-    flex: 0 1 262px;
-    box-sizing: border-box;
+    min-width: 262px;
     &:focus {
       outline: none;
     }
@@ -42,8 +42,12 @@
       box-sizing: border-box;
       position: relative;
       padding: 11px 15px 11px 10px;
+      font-size: 16px;
       &:focus {
         outline: none;
+      }
+      &:nth-child(4) {
+        margin-left: -14px;
       }
       &__separator {
         background: #BDC0CF;
@@ -51,6 +55,18 @@
         height: 1px;
         margin-left: 4px;
         margin-right: 4px;
+        position: relative;
+        margin-left: -14px;
+      }
+      &__clean {
+        background: url("../../../assets/images/svg/cross.svg");
+        min-width: 18px;
+        height: 18px;
+        border: none;
+        position: relative;
+        left: -30px;
+        box-sizing: border-box;
+        cursor: pointer;
       }
     }
     &__details {
@@ -68,6 +84,7 @@
       margin-left: 10px;
       position: relative;
       cursor: pointer;
+      margin-left: -8px;
       &:after {
         content: "";
         position: absolute;

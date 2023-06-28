@@ -2,7 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./TasksHeader.scss";
 
-const TasksHeader = ({ dates, handleInputChange }) => {
+const TasksHeader = ({
+  filters,
+  setFilters,
+  setDates,
+  dates,
+  handleInputChange,
+}) => {
   return (
     <div className="tasks__container">
       <h2 className="tasks__header">Задачи</h2>
@@ -34,6 +40,13 @@ const TasksHeader = ({ dates, handleInputChange }) => {
         className="tasks__search__date"
         type="text"
       />
+      <button
+        onClick={() => {
+          setDates({ ...dates, from: "" });
+          setFilters({ ...filters, from: "1900 01 01" });
+        }}
+        className="tasks__search__date__clean"
+      ></button>
       <span className="tasks__search__date__separator"></span>
       <input
         maxLength={10}
@@ -54,6 +67,13 @@ const TasksHeader = ({ dates, handleInputChange }) => {
         className="tasks__search__date"
         type="text"
       />
+      <button
+        onClick={() => {
+          setDates({ ...dates, to: "" });
+          setFilters({ ...filters, to: "2099 01 01" });
+        }}
+        className="tasks__search__date__clean"
+      ></button>
       <button className="tasks__search__details">Подробнее</button>
     </div>
   );
@@ -62,6 +82,9 @@ const TasksHeader = ({ dates, handleInputChange }) => {
 TasksHeader.propTypes = {
   dates: PropTypes.object,
   handleInputChange: PropTypes.func,
+  setDates: PropTypes.func,
+  filters: PropTypes.object,
+  setFilters: PropTypes.func,
 };
 
 export default TasksHeader;
