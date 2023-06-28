@@ -7,6 +7,11 @@
   align-items: center;
   background-color: #fff;
 
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__select {
     width: 100%;
     max-width: 300px;
@@ -16,7 +21,7 @@
 
   &__select-prefix {
     height: 42px;
-    border-radius: $br-radius-sm;
+    border-radius: $br-radius-xs;
     border: $br-partner;
     background: #fff;
     gap: 5px;
