@@ -279,3 +279,57 @@ export const tableData = {
     },
   ],
 };
+
+export const infoCardsData = {
+  plan: [
+    {
+      id: '01',
+      title: 'План',
+      value: '1 345 678 ₽'
+    },
+    {
+      id: '02',
+      title: 'Факт',
+      value: '2 456 ₽'
+    },
+    {
+      id: '03',
+      title: 'Осталось',
+      value: '1 789 ₽'
+    }
+  ],
+  kpi: [
+    {
+      id: '04',
+      title: 'План',
+      value: '2'
+    },
+    {
+      id: '05',
+      title: 'Факт',
+      value: '40'
+    },
+    {
+      id: '06',
+      title: 'Осталось',
+      value: '40'
+    }
+  ],
+  bonus: [
+    {
+      id: '07',
+      title: 'План',
+      value: '12'
+    },
+    {
+      id: '08',
+      title: 'Факт',
+      value: '6'
+    },
+    {
+      id: '09',
+      title: 'Осталось',
+      value: '1'
+    }
+  ],
+}
