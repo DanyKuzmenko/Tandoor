@@ -1,0 +1,165 @@
+@import "../../../utils/scss/vars";
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+
+  &__top-block {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding: 14px 20px;
+  }
+
+  &__title-block {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:nth-of-type(1) {
+      background-image: url("../../../assets/images/svg/infoCards/calendar.svg");
+    }
+
+    &:nth-of-type(2) {
+      background-image: url("../../../assets/images/svg/infoCards/cash.svg");
+    }
+
+    &:nth-of-type(3) {
+      background-image: url("../../../assets/images/svg/infoCards/calendar-check.svg");
+    }
+  }
+
+  &__title-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: $fz-xl;
+    font-weight: $b;
+    color: $black;
+  }
+
+  &__subtitle {
+    display: flex;
+    font-size: $fz-base;
+    color: $gray;
+    text-decoration: unset;
+  }
+
+  &__subtitle-arrow {
+    width: 18px;
+    height: 18px;
+    background-image: url("../../../assets/images/svg/arrow-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__line-block {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__line-container {
+    display: flex;
+    width: 338px;
+  }
+
+  &__line-active {
+    height: 8px;
+  }
+
+  &__line {
+    height: 8px;
+    background-color: #fff;
+  }
+
+  &__line-percent {
+    font-size: $fz-lg;
+    font-weight: $b;
+  }
+
+  &__bottom-block {
+    padding: 13px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  &__info-block {
+    padding: 8px 18.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__info-block-title {
+    font-size: $fz-base;
+    text-align: center;
+    color: $black;
+    font-weight: $r;
+  }
+
+  &__info-block-subtitle {
+    font-size: $fz-lg;
+    font-weight: $b;
+    color: $black;
+    text-align: center;
+  }
+
+  &__between-line {
+    width: 1px;
+    height: 41px;
+    background-color: #E3E6F3;
+
+    &:last-of-type {
+      display: none;
+    }
+  }
+}
+
+.orange {
+  color: $orange;
+}
+
+.background-orange {
+  background-color: $orange;
+}
+
+.background-light-orange {
+  background-color: $orange-light;
+}
+
+.green {
+  color: $green;
+}
+
+.background-green {
+  background-color: $green;
+}
+
+.background-light-green {
+  background-color: $green-light;
+}
+
+.blue {
+  color: $blue;
+}
+
+.background-blue {
+  background-color: $blue;
+}
+
+.background-light-blue {
+  background-color: $blue-light;
+}
