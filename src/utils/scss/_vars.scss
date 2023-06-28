@@ -1,25 +1,40 @@
 // Colors
+$black: #222631;
 $gray: #343F5B;
 $light-gray: #8F96B0;
 $page-background-color: #EEEFF6;
 $green: #9ACA3C;
+$select-bg-color: #F9FAFF;
+
+// CardsInfoColors
+$orange: #FF9700;
+$orange-light: #FFECD0;
+$green: #9ACA3C;
+$green-light: #E5FFCB;
+$blue: #109CF1;
+$blue-light: #D1EDFF;
 
 // Font-size
 $fz-sm: 12px;
 $fz-base: 16px;
 $fz-lg: 18px;
+$fz-xl: 22px;
 
 // Font weight
+$r: 400;
 $b: 600;
 
 // Borders
 $br-base: 1px solid #EEEFF6;
 $br-avatar: 1px solid #8F96B0;
 $br-partner: 1px solid #E3E6F3;
+$br-button: 1px solid #BDC0CF;
 
 
 // Border-radius
-$br-radius-base: 2px;
+$br-radius-xs: 2px;
+$br-radius-sm: 4px;
+$br-radius-base: 6px;
 $br-radius-lg: 14px;
 
 
