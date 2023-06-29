@@ -5,6 +5,7 @@ import PageAside from "../../components/PageAside/PageAside";
 import PageWrapper from "../../components/PageWrapper/pageWrapper";
 import SearchBlock from "../../components/SearchBlock/SearchBlock";
 import InfoCards from '../../components/InfoCards/InfoCards';
+import RatingBlock from '../../components/RatingBlock/RatingBlock';
 
 const MainPage = () => {
   return (
@@ -15,6 +16,7 @@ const MainPage = () => {
         <h1 className='main-page__title'>Главная</h1>
         <SearchBlock />
         <InfoCards />
+        <RatingBlock />
       </main>
     </PageWrapper>
   );
