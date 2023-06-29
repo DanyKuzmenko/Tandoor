@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./KpiContentCards.scss";
+import "./kpiContentCards.scss";
 
 const KpiContentCards = ({ items }) => {
   return (

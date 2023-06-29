@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./KpiContentBars.scss";
+import "./kpiContentBars.scss";
 
 const KpiContentBars = ({ items }) => {
   if (!items) return;
