@@ -1,14 +1,18 @@
 import React, { useEffect, useMemo, useState } from "react";
-import "./kpiPage.scss";
-import KpiHeader from "../../components/KpiContent/KpiHeader/kpiHeader";
+import "./KpiComponent.scss";
+import KpiHeader from "../KpiHeader/KpiHeader";
 import { kpiItems, kpiSelectOptions } from "../../utils/constants";
-import KpiContentBars from "../../components/KpiContent/KpiContentBars/kpiContentBars";
-import KpiContentCards from "../../components/KpiContent/KpiContentCards/kpiContentCards";
+import KpiContentBars from "../KpiContent/KpiContentBars/KpiContentBars";
+import KpiContentCards from "../KpiContent/KpiContentCards/KpiContentCards";
 
-const KpiPage = () => {
+const KpiComponent = () => {
   const [items, setItems] = useState([]);
   const [doors, setDoors] = useState(kpiItems);
   const [selectedOption, setSelectedOption] = useState("");
+  const [lastFilter, setLastFilter] = useState({
+    doorType: "",
+    kpiType: "Все KPI",
+  });
   const [kpiView, setKpiView] = useState("kpi-view-1");
 
   useEffect(() => {
@@ -35,14 +39,22 @@ const KpiPage = () => {
 
   const handleSelectChange = (value) => {
     setSelectedOption(value);
+    ``;
+    if (value) {
+      setLastFilter({ ...lastFilter, kpiType: value });
+    } else {
+      setLastFilter({ ...lastFilter, kpiType: "Все KPI" });
+    }
   };
 
   const handleDoorsTypeRadio = (e) => {
     setDoors(
       kpiItems.filter((door) => {
         if (e.target.value === "all") {
+          setLastFilter({ ...lastFilter, doorType: "" });
           return true;
         }
+        setLastFilter({ ...lastFilter, doorType: e.target.value });
         return door.type === e.target.value;
       })
     );
@@ -53,10 +65,11 @@ const KpiPage = () => {
       <KpiHeader
         kpiView={kpiView}
         setKpiView={setKpiView}
-        selectValue={selectedOption}
         selectOptions={kpiSelectOptions}
         filterByType={handleDoorsTypeRadio}
         selectChange={handleSelectChange}
+        lastFilter={lastFilter}
+        setLastFilter={setLastFilter}
       />
 
       {kpiView === "kpi-view-1" ? (
@@ -68,4 +81,4 @@ const KpiPage = () => {
   );
 };
 
-export default KpiPage;
+export default KpiComponent;

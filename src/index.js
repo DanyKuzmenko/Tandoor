@@ -4,16 +4,11 @@ import "./index.scss";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainPage from "./pages/mainPage/mainPage";
-import KpiPage from "./pages/kpiPage/kpiPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainPage />,
-  },
-  {
-    path: "/kpi",
-    element: <KpiPage />,
   },
 ]);
 

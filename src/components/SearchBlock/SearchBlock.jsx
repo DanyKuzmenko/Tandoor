@@ -3,6 +3,7 @@ import './SearchBlock.scss';
 import Input from '../Input/Input';
 import Select, { components } from 'react-select';
 import SearchResultBlock from './SearchResultBlock/SearchResultBlock';
+import ShowMoreButton from '../Buttons/ShowMoreButton/ShowMoreButton';
 
 const options = [
   {
@@ -46,13 +47,9 @@ const SearchBlock = () => {
         />
         <div className="search-block__container">
           <Input placeholder={'Поиск задач...'} />
-          <button
-            className="search-block__button"
-            onClick={handleOpenSearchResultBlock}
-          >
-            Подробнее
-            <span className="search-block__button-right-arrow" />
-          </button>
+          <ShowMoreButton
+            handleButtonClick={handleOpenSearchResultBlock}
+          />
         </div>
       </div>
       {isSearchResultBlockOpen ? <SearchResultBlock /> : ''}

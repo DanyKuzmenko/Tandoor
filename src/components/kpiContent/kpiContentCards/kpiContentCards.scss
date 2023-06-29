@@ -1,0 +1,70 @@
+.kpi-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 20px;
+
+  &__item {
+    width: calc(20% - 10px);
+    box-sizing: border-box;
+    border: 1px solid #EEEFF6;
+    text-align: center;
+    padding: 15px 20px 9px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__plan {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 600;
+
+      &:after {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        content: "";
+        background: url("../../../assets/images/svg/arrow-right.svg") no-repeat center center;
+      }
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__name {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    &__material {
+      color: #8F96B0;
+    }
+    &__percent {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      &__bar {
+        height: 8px;
+        width: 100%;
+        background: #E5FFCB;
+        position: relative;
+        &_green {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          background: #9ACA3C;
+        }
+      }
+      &__fact {
+        color: #9ACA3C;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
+}
