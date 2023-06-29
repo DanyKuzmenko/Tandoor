@@ -1,3 +1,9 @@
+import img1 from '../assets/images/rating/image1.png';
+import img2 from '../assets/images/rating/image2.png';
+import img3 from '../assets/images/rating/image3.png';
+import img4 from '../assets/images/rating/image4.png';
+import img5 from '../assets/images/rating/image5.png';
+
 export const kpiItems = [
   {
     id: 1,
@@ -332,4 +338,45 @@ export const infoCardsData = {
       value: '1'
     }
   ],
-}
+};
+
+export const ratingData = [
+  {
+    id: '0001',
+    place: '1',
+    placeColor: 'gold',
+    title: 'Василиса Примудрая',
+    percent: '100%',
+    image: img1
+  },
+  {
+    id: '0002',
+    place: '2',
+    placeColor: 'silver',
+    title: 'Екатерина Медяникова',
+    percent: '99%',
+    image: img2
+  },
+  {
+    id: '0003',
+    place: '3',
+    placeColor: 'bronze',
+    title: 'Василиса Степанова',
+    percent: '92%',
+    image: img3
+  },
+  {
+    id: '0004',
+    place: '4',
+    title: 'Анатолий Весёлый',
+    percent: '84%',
+    image: img4
+  },
+  {
+    id: '0005',
+    place: '5',
+    title: 'Антон Иванов',
+    percent: '2%',
+    image: img5
+  },
+];

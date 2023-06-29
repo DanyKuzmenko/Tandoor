@@ -1,0 +1,74 @@
+@import "../../../utils/scss/vars";
+
+.rating-row {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 12.5px 20px;
+  background-color: #fff;
+
+  &:nth-of-type(9) {
+    background-color: $green-light;
+  }
+
+  &__place {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    min-height: 24px;
+    margin: 0 7.5px;
+    font-size: $fz-base;
+    font-weight: $b;
+    border-radius: 50%;
+    background: unset;
+    color: $light-gray;
+  }
+
+  &__avatar {
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+  }
+
+  &__title {
+    font-size: $fz-base;
+    color: $gray;
+    font-weight: $r;
+    margin: 0 0 0 10px;
+    width: 100%;
+  }
+
+  &__percents {
+    text-align: end;
+    font-size: $fz-base;
+    font-weight: $b;
+    color: $gray;
+  }
+
+  &__line {
+    border-bottom: $br-partner;
+
+    &:last-of-type {
+      display: none;
+    }
+  }
+}
+
+.gold {
+  background: linear-gradient(142deg, #F8CB69 0%, #FFD987 14.37%, #F9C24B 30.00%, #F9C24B 47.19%, #FFD987 67.50%, #F9C24B 81.56%, #F8CB69 100%);
+  color: $gold;
+  box-shadow: 0 1px 2px 0 rgba(147, 107, 22, 0.50);
+}
+
+.silver {
+  background: linear-gradient(142deg, #F3F3F3 0%, #F3F3F3 0.01%, #C5D3DE 22.71%, #F5F5F5 48.23%, #C5D3DE 73.75%, #EFEEEE 100%);
+  color: $silver;
+  box-shadow: 0 1px 2px 0 rgba(93, 114, 128, 0.50);
+}
+
+.bronze {
+  background: linear-gradient(142deg, #C07E30 0%, #DA9F59 25.83%, #C07E30 49.79%, #DA9F59 71.15%, #C07E30 100%);
+  color: $bronze;
+  box-shadow: 0 1px 2px 0 rgba(93, 114, 128, 0.50);
+}

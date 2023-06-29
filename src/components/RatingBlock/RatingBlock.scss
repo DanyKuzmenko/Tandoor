@@ -1,0 +1,28 @@
+@import "../../utils/scss/vars";
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  max-width: 420px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px 0 20px;
+  }
+
+  &__title {
+    font-size: $fz-xl;
+    font-weight: $b;
+    color: $black;
+  }
+
+  &__rows {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
