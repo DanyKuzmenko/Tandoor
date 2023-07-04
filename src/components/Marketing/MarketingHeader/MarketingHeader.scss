@@ -1,0 +1,32 @@
+.marketing-header {
+  display: flex;
+  align-items: center;
+  &__title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #222631;
+    margin-right: 20px;
+  }
+  &__radio {
+    flex: 0 0 370px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 10px;
+    &__item {
+      display: none;
+    }
+    &__item+.marketing-header__radio__label {
+      display: inline-block;
+      padding: 0 0 0 24px;
+      cursor: pointer;
+      background: url("../../../assets/images/svg/doors-label.svg") no-repeat left center;
+    }
+    &__item:checked+.marketing-header__radio__label {
+      background: url("../../../assets/images/svg/doors-label-checked.svg") no-repeat left center;
+    }
+  }
+
+}

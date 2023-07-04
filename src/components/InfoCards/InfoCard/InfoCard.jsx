@@ -26,13 +26,13 @@ const InfoCard = ({ color, title, subtitle, percent, infoBlock }) => {
       </div>
       <div className='info-card__bottom-block'>
         {infoBlock.map((info, index) => (
-          <>
+          <div key={index}>
             <div className={'info-card__info-block'} key={info.id}>
               <h4 className={'info-card__info-block-title'}>{info.title}</h4>
               <p className={`info-card__info-block-subtitle ${index === 1 ? color : ''}`}>{info.value}</p>
             </div>
             <div className={'info-card__between-line'} />
-          </>
+          </div>
         ))}
       </div>
     </div>
