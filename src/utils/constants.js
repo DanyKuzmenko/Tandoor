@@ -430,5 +430,5 @@ export const ratingData = [
 ];
 export const marketingItems = [
   { id: 1, name: 'first', dateEnd: '09.12.2021 12:34' },
-  { id: 2, name: 'second', dateEnd: '09.13.2024 12:34' },
+  { id: 2, name: 'second', dateEnd: '07.05.2023 22:50' },
 ];

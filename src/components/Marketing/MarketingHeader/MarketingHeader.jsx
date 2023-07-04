@@ -14,7 +14,12 @@ const MarketingHeader = ({
   return (
     <div className="marketing-header">
       <h2 className="marketing-header__title">Маркетинг</h2>
-      <Input placeholder="Поиск акции..." />
+      <Input
+        filters={filters}
+        setFilters={setFilters}
+        placeholder="Поиск акции..."
+        styles={{ marginRight: '10px' }}
+      />
       <DateInputs
         setFilters={setFilters}
         setDates={setDates}

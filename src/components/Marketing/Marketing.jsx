@@ -28,12 +28,12 @@ const Marketing = () => {
           return new Date(item.dateEnd) < Date.now();
         });
       }
-
+      console.log(radioFiltered);
       setMarketing(
         radioFiltered.filter((item) => {
           return (
-            +new Date(item.dateCreate) > Date.parse(filters.from) &&
-            +new Date(item.dateCreate) < Date.parse(filters.to) &&
+            +new Date(item.dateEnd) > Date.parse(filters.from) &&
+            +new Date(item.dateEnd) < Date.parse(filters.to) &&
             item.name.includes(filters.search)
           );
         })
@@ -68,8 +68,6 @@ const Marketing = () => {
     setDatesFilters('from');
     setDatesFilters('to');
   };
-
-  console.log('marketing', marketing);
 
   return (
     <div className="marketing-container">
