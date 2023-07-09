@@ -1,11 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import MarketingCard from '../MarketingCard/MarketingCard';
+import './MarketingContent.scss';
+
 const MarketingContent = ({ marketing }) => {
+
+  console.log('marketing', marketing);
+
   return (
-    <div>
-      {marketing.map((item) => {
-        return <div key={item.id}>{item.name}</div>;
-      })}
+    <div className={'marketing-cards'}>
+      {marketing.map((item) => (
+        <MarketingCard key={item.id} image={item.image} title={item.title} text={item.text} />
+      ))}
     </div>
   );
 };

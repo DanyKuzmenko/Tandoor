@@ -1,0 +1,40 @@
+@import '../../../utils/scss/vars';
+
+.marketing-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__image {
+    max-width: 405px;
+    max-height: 145px;
+  }
+
+  &__text-block {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+  }
+
+  &__title {
+    font-size: $fz-base;
+    font-weight: $b;
+  }
+
+  &__text {
+    font-size: $fz-base;
+    font-weight: $r;
+  }
+
+  &__button {
+    color: $green;
+    font-size: $fz-base;
+    font-weight: $r;
+    text-decoration-line: underline;
+    align-self: start;
+    padding: 0;
+    cursor: pointer;
+  }
+}

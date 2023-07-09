@@ -3,6 +3,9 @@ import img2 from '../assets/images/rating/image2.png';
 import img3 from '../assets/images/rating/image3.png';
 import img4 from '../assets/images/rating/image4.png';
 import img5 from '../assets/images/rating/image5.png';
+import image1 from '../assets/images/marketing/image1.png';
+import image2 from '../assets/images/marketing/image2.png';
+import image3 from '../assets/images/marketing/image3.png';
 
 export const kpiItems = [
   {
@@ -429,6 +432,28 @@ export const ratingData = [
   },
 ];
 export const marketingItems = [
-  { id: 1, name: 'first', dateEnd: '09.12.2021 12:34' },
-  { id: 2, name: 'second', dateEnd: '07.05.2023 22:50' },
+  {
+    id: 1,
+    name: 'Гарантия лучшей цены!',
+    dateEnd: '09.12.2021 12:34',
+    image: image1,
+    title: 'Гарантия лучшей цены!',
+    text: 'Программа «ГАРАНТИЯ ЛУЧШЕЙ ЦЕНЫ! Найдете дешевле – сделаем...',
+  },
+  {
+    id: 2,
+    name: 'Электронные замки',
+    dateEnd: '07.05.2023 22:50',
+    image: image2,
+    title: 'Электронные замки',
+    text: 'В нашем ассортименте Вы с легкостью найдете как современн...',
+  },
+  {
+    id: 3,
+    name: 'Новый магазин а г. Новороссийск',
+    dateEnd: '07.05.2023 22:50',
+    image: image3,
+    title: 'Новый магазин а г. Новороссийск',
+    text: 'В семье Tandoor – пополнение 20 февраля распахнул свои двери ...',
+  },
 ];

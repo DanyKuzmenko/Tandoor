@@ -8,6 +8,7 @@ import InfoCards from '../../components/InfoCards/InfoCards';
 import RatingBlock from '../../components/RatingBlock/RatingBlock';
 import KpiComponent from '../../components/KpiComponent/KpiComponent';
 import TasksComponent from '../../components/Tasks/TasksComponent';
+import Marketing from '../../components/Marketing/Marketing';
 
 const MainPage = () => {
   return (
@@ -23,6 +24,7 @@ const MainPage = () => {
           <TasksComponent />
           <RatingBlock />
         </div>
+        <Marketing />
       </main>
     </PageWrapper>
   );

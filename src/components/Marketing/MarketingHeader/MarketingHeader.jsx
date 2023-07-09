@@ -4,6 +4,7 @@ import DateInputs from '../../DateInputs/DateInputs';
 import './MarketingHeader.scss';
 import Input from '../../Input/Input';
 import ShowMoreButton from '../../Buttons/ShowMoreButton/ShowMoreButton';
+
 const MarketingHeader = ({
   dates,
   setDates,

@@ -1,0 +1,7 @@
+.marketing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 9px;
+  margin-top: 14px;
+}

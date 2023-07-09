@@ -4,14 +4,12 @@ import './index.scss';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import MainPage from './pages/mainPage/mainPage';
-import Marketing from './components/Marketing/Marketing';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <MainPage />,
   },
-  { path: '/Marketing', element: <Marketing /> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

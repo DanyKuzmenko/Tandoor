@@ -7,7 +7,9 @@ const Input = ({ placeholder, styles, filters, setFilters }) => {
     <div style={styles} className="input__wrapper">
       <input
         onChange={(event) => {
-          setFilters({ ...filters, search: event.target.value });
+          if (setFilters) {
+            setFilters({ ...filters, search: event.target.value });
+          }
         }}
         value={filters?.search}
         placeholder={placeholder}
