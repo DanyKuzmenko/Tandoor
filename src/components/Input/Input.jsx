@@ -9,7 +9,7 @@ const Input = ({ placeholder, styles, filters, setFilters }) => {
         onChange={(event) => {
           setFilters({ ...filters, search: event.target.value });
         }}
-        value={filters.search}
+        value={filters?.search}
         placeholder={placeholder}
         className="input"
       />
